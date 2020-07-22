@@ -37,7 +37,7 @@ define KernelPackage/sched-cake-virtual
   SUBMENU:=Network Support
   TITLE:=Virtual package for sched-cake
   URL:=https://github.com/dtaht/sch_cake
-  DEPENDS:=+!LINUX_4_14:kmod-sched-cake +LINUX_4_14:kmod-sched-cake-oot
+  DEPENDS:=kmod-sched-cake
 endef
 
 define KernelPackage/sched-cake-virtual/description
@@ -47,8 +47,6 @@ endef
 include $(INCLUDE_DIR)/kernel-defaults.mk
 
 define Build/Compile
-	$(KERNEL_MAKE) M="$(PKG_BUILD_DIR)" modules
 endef
 
-$(eval $(call KernelPackage,sched-cake-oot))
 $(eval $(call KernelPackage,sched-cake-virtual))
