@@ -1115,7 +1115,7 @@ define Device/xiaomi_mir4a
   DEVICE_MODEL := xiaomi_mir4a
   DEVICE_PACKAGES := kmod-mt7603 kmod-mt76x2 wpad-basic
 endef
-TARGET_DEVICES += youhua_wr1200js
+TARGET_DEVICES += xiaomi_mir4a
 
 define Device/xiaomi_mir3p
   $(Device/uimage-lzma-loader)
