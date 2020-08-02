@@ -1109,6 +1109,14 @@ define Device/xiaomi_mir3g-v2
 endef
 TARGET_DEVICES += xiaomi_mir3g-v2
 
+define Device/xiaomi_mir4a
+  IMAGE_SIZE := 16064k
+  DEVICE_VENDOR := Xiaomi
+  DEVICE_MODEL := xiaomi_mir4a
+  DEVICE_PACKAGES := kmod-mt7603 kmod-mt76x2 wpad-basic
+endef
+TARGET_DEVICES += youhua_wr1200js
+
 define Device/xiaomi_mir3p
   $(Device/uimage-lzma-loader)
   BLOCKSIZE := 128k
